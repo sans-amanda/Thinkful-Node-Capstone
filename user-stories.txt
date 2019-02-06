@@ -1,0 +1,32 @@
+Node Capstone
+Unit 3 Lesson 2 Project 2
+FROM APP IDEA TO USER STORIES
+
+- Brainstorm Idea:
+  - Anxiety, stress
+  - Group advice
+  - Support for small and big problems
+  - App for people to write/record what is bothering them.
+
+- Define You App's Purpose:
+  - Give users a more concrete/tangible way of deal with mental stress and anxiety.
+  - Allow other users to interact with advice, helpful encourgment, etc.
+  - Create a judgement-free space to LET THAT SHIT GO.
+  - Anonymously post and interact with other users.
+  - Community confessional/diary/journal.
+  - Should feel living/breathing, like a collective consciousness. 
+  - Users anonymous, and should not be able to differentiate between mine and other's posts.
+
+- Write Your App Idea Down:
+  - App allows users to post and interact (anonymously) with problems or anxieties they are thinking/feeling. When they are "resolved", users can erase them from the archive to help "let go".
+
+- User Stories to Determine Features
+  - As A User, I should...
+    - ...be able to signup (username and password)
+    - ...be able to login
+    - ...be able to post a problem
+    - ...be able to comment on others' problems
+    - ...be able to vote to "let go" of problems (delete them) after a certain amount of positive interactions
+    - ...NOT be able to edit posted problems
+    - ...NOT be able to see who posted or commented on anything
+
