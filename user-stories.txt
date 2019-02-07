@@ -29,4 +29,5 @@ FROM APP IDEA TO USER STORIES
     - ...be able to vote to "let go" of problems (delete them) after a certain amount of positive interactions
     - ...NOT be able to edit posted problems
     - ...NOT be able to see who posted or commented on anything
+    - ...be able to interact with the app anonymously
 
