@@ -1,0 +1,31 @@
+# DESIGN YOUR MVP
+
+---
+Descope Your Feature Set
+- As A User, I should...
+    - ...be able to view posted worries by most recent
+    - ...be able to post a worry
+    - ...be able to comment on others' worries
+    - ...be able to delete problems
+    - ...be able to vote to "let go" of worries (delete them) after a certain amount of positive interactions
+    - ...be able to interact with the app anonymously
+
+---
+List Out the Screens the User Will See
+  1. Screen for viewing all current worries (home screen)
+  2. Screen for posting a new worry
+  3. Screen for clicking a worry to comment
+  4. Screen for deleting a worry
+
+---
+- Write Out the User Journey for Each Screen
+  - Homepage (all worries)
+    - user wants to enter a worry
+      - -> page to enter enter new post (modal window?)
+    - user wants open on specific worry and see comments or comment on it
+      - -> page that opens a specific worry and all comments on it (modal window?)
+  - Worry page (just one)
+    -  -> read worry
+    -  -> read comments
+    -  -> add comment
+    -  -> "delete" worry
