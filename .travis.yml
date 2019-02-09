@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: nuenI2+n3sOLjQHmoRUoToF3+wDxqkc/aTLCnobdK/Q/6kKC3RLNYzcpfZLd6iFodQhH/xUQ2mIvkI9luJ2qOkOjStQsLzSvi+JCVm65rgt/Kl2Gek3U5Bx4QkZWLbZTp3elo5dBwYePbFwKnShLvDG6ltaIsQZDM+kepkANptxy/pO2EOiCuI5t6Hy+4XV4c3eV1Om4uyhxRR2je7UnTiZ+uRUbWAqltoWYlE5uWnTWCDU7NQtLSOUm1HfXAzyeoDjzk9rcwP+h8g5J+gfsZgstkjynjbJWyXt+zwGeqT9+2ABrYaUYPGTtI5ZEHjb9tnEYur1HaKl0xKLPCue+CxjnAOpj5Nm3rD1M4KwtS7k/3Y98ruGM8MXqKdRSvMPeIVVQJZLBIortb8PclvaQUz4rfEutmQWiluz/B+4UV/BJGvA1vw409dgmIKO49cJpQG75IdwCakSMtNCIaoMPaxyJOSbnJ5rGdWVdXkO1lsJOfaGQEg1ldjTHTqZKrwpB4Eb4wV7vFduQWnTditSC6IhDBbnDR1dvowwtm3fx/Ew/WlpHmGENHr+vcjlHlE3gT/c/FepCIzuH2u0CJdohkeWavsQ8zhPSkFSbBYwXwkFPs5dRuu0XX5XJLm3oH1JELyO8HqeKIMOOJZDtLW2jNriG+8Htx1ayljvhkM5CTDc=
+  app: shrouded-reaches-59652
+  on:
+    repo: sans-amanda/Thinkful-Node-Capstone
