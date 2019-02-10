@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 describe("localhost", function() {
     it("should return 200 status & HTML file", function(done) {
       chai.request("http://localhost:8080")
-        .get("/")
+        .get("/dashbaord")
         .then(function(res) {
             expect(res).to.have.status(200);
             expect(res).to.be.html;
