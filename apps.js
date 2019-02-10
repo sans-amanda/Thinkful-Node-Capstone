@@ -4,7 +4,7 @@ var MOCK_WORRY_UPDATE = {
 	"worryUpdates": [
         {
             "id": "1111111",
-            "text": "wow i'm really anxious about this.",
+            "text": "Wow I'm really anxious about this. Duis quis mi rhoncus, fermentum massa a, efficitur augue. Integer posuere sapien diam, in feugiat mi faucibus ut. Nullam gravida lacus ut mi eleifend, lacinia sagittis lectus dapibus. Nulla facilisi. Vivamus vel nunc id erat blandit pretium sit amet eu sem. Nam diam velit, suscipit eu libero accumsan, dignissim eleifend ante. Mauris vestibulum sodales augue sit amet tempus.",
             "friendId": "aaaa",
             "upVotes": 3,
             "comments": [
@@ -16,7 +16,7 @@ var MOCK_WORRY_UPDATE = {
         },
         {
             "id": "2222222",
-            "text": "i can't stop thinking about xyz",
+            "text": "i can't stop thinking about xyz. Quisque viverra eros ante, in commodo sem maximus sed. Morbi posuere sapien at eros cursus feugiat. Maecenas commodo at erat eu rutrum.",
             "friendId": "bbbb",
             "upVotes": 1,
             "comments": [
@@ -28,7 +28,7 @@ var MOCK_WORRY_UPDATE = {
         },
         {
             "id": "333333",
-            "text": "i've always had trouble getting over abc",
+            "text": "I've always had trouble getting over abc. Vivamus in auctor diam. Curabitur eleifend efficitur tempus. Vivamus mollis posuere lorem ac egestas. Quisque libero augue, varius at lorem et, tempus ultrices odio. Cras pellentesque nisl vel aliquam iaculis. Aliquam pulvinar ante vitae rhoncus dignissim. Duis ultricies volutpat luctus. Duis quis mi rhoncus, fermentum massa a, efficitur augue. Integer posuere sapien diam, in feugiat mi faucibus ut. Nullam gravida lacus ut mi eleifend, lacinia sagittis lectus dapibus. ",
             "friendId": "cccc",
             "upVotes": 7,
             "comments": [
@@ -40,7 +40,7 @@ var MOCK_WORRY_UPDATE = {
         },
         {
             "id": "333333",
-            "text": "i can't get this out of my head. i know it's not a big deal, but...",
+            "text": "I can't get this out of my head. I know it's not a big deal, but...Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec gravida interdum ultrices. Nunc pellentesque nunc tellus, ac tincidunt nibh feugiat id. Fusce eu nibh urna.",
             "friendId": "dddd",
             "upVotes": 10,
             "comments": [
