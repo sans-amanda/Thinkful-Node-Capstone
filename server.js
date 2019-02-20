@@ -1,35 +1,37 @@
 "use strict";
-// `require` is used to import third party libraries
-// here we use it to import express
+//--IMPORT EXPRESS
 const express = require("express");
-// calling `express()` creates a new app, which we set to 
-// the constant `app`
-const morgan = require("morgan");
+//--NEW APP CREATED AT CONSTANT `app`
 const app = express();
+//--IMPORT MORGAN
+const morgan = require("morgan");
+
+//--IMPORT MONGOOSE
+const mongoose = require("mongoose");
+// make Mongoose use built in es6 promises
+mongoose.Promise = global.Promise;
+
+//--IMPORT VALUES FROM `/config`
+const {PORT, DATABASE_URL} = require("./config");
 
 // log the http layer
+// app.use(morgan(':date[iso] :method :url :response-time'));
 app.use(morgan("common"));
 // sets up a static file server to serve assets from a public folder
 app.use(express.static("public"));
 // body parsing middleware, to use Express to try to parse JSON from request bodies
 app.use(express.json());
-app.listen(process.env.PORT || 8080);
 
 
 const routerPost = require("./routerPost");
-const routerDashboard = require("./routerDashboard");
-
-
-app.get("/", (req, res) => {
-//html, css, and js files from /public
-});
+const routerUsers = require("./routerUsers");
 
 // when requests come into `/post` or
-// `/recipes`, we'll route them to the express
+// `/users`, we'll route them to the express
 // router instances we've imported. Remember,
 // these router instances act as modular, mini-express apps.
-app.use("/post", routerPost);
-app.use("/dash", routerDashboard);
+app.use("/api/post", routerPost);
+app.use("/api/users", routerUsers);
 
 
 // listen for requests and log when you've started doing it

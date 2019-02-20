@@ -1,38 +1,3 @@
-const express = require("express");
-const morgan = require("morgan");
-const mongoose = require("mongoose");
-
-// Change mongoose's promise to ES6
-mongoose.Promise = global.Promise;
-
-// Variables needed from configs.js
-const { PORT, DATABASE_URL } = require('./config');
-
-// Create the express app
-const app = express();
-
-// Set up routs
-const User = require('./controllers/users-router');
-const Client = require('./controllers/clients-router');
-const Note = require('./controllers/notes-router');
-const { router: authRouter } = require('./controllers/auth-router');
-const { localStrategy, jwtStrategy } = require('./middlewares/auth-strategies');
-
-passport.use(localStrategy);
-passport.use(jwtStrategy);
-
-// Let express know to grab files from public folder
-app.use(morgan('common')); // Our server logger
-app.use(express.json());
-app.use(express.static('public'));
-app.use('/api/users', User);
-app.use('/api/auth', authRouter);
-app.use('/api/clients', Client);
-app.use('/api/notes', Note);
-
-
-
-
 // this is mock data, but when we create our API
 // we'll have it return data that looks like this
 var MOCK_WORRY_UPDATE = {
@@ -88,6 +53,9 @@ var MOCK_WORRY_UPDATE = {
     ]
 };
 
+
+// this is mock data, but when we create our API
+// we'll have it return data that looks like this
 var MOCK_USER_INFO = {
     "usersLogin" : [
         {
@@ -105,7 +73,7 @@ var MOCK_USER_INFO = {
 // timeout function that returns mock data, it will
 // use jQuery's AJAX functionality to make a call
 // to the server and then run the callbackFn
-function getRecentWorries(callbackFn) {
+function getRecentWorryUpdates(callbackFn) {
     // we use a `setTimeout` to make this asynchronous
     // as it would be with a real AJAX call.
 	setTimeout(function(){ callbackFn(MOCK_WORRY_UPDATES)}, 1);
@@ -129,11 +97,11 @@ function displayWorryUpdates(data) {
 
 // this function can stay the same even when we
 // are connecting to real API
-function getAndDisplayWorries() {
-	getRecentWorries(displayWorryUpdates);
+function getAndDisplayWorryUpdates() {
+	getRecentWorryUpdates(displayWorryUpdates);
 }
 
 //  on page load do this
 $(function() {
-	getAndDisplayWorries();
+	getAndDisplayWorryUpdates();
 })
