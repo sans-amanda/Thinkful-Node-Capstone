@@ -17,8 +17,8 @@ userSchema.methods.serialize = function () {
     };
 };
   
-const User = mongoose.model("User", userSchema);
-
+const User = mongoose.model("Users", userSchema);
+//db.users
 
 
 
@@ -34,7 +34,7 @@ commentSchema.methods.serialize = function () {
 };
 
 const Comments = mongoose.model("Comments", commentSchema);
-
+//db.comments
 
 
 
@@ -57,8 +57,8 @@ postSchema.methods.serialize = function () {
     };
 };
 
-const Post = mongoose.model("Post", postSchema);
-
+const Post = mongoose.model("Posts", postSchema);
+//db.posts
 
 
 
