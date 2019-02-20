@@ -1,0 +1,48 @@
+{
+    "id": "1111111",
+    "text": "Wow I'm really anxious about this. Duis quis mi rhoncus, fermentum massa a, efficitur augue. Integer posuere sapien diam, in feugiat mi faucibus ut. Nullam gravida lacus ut mi eleifend, lacinia sagittis lectus dapibus. Nulla facilisi. Vivamus vel nunc id erat blandit pretium sit amet eu sem. Nam diam velit, suscipit eu libero accumsan, dignissim eleifend ante. Mauris vestibulum sodales augue sit amet tempus.",
+    "friendId": "aaaa",
+    "upVotes": 3,
+    "comments": [
+        { "content": "i know it doesn't feel like it but it'll be ok" },
+        { "content": "i was dealing with the same shit recently" },
+        { "content": "sometimes time is the best teacher" },
+        { "content": "wow that's really challenging. maybe seek out outside support?" }
+    ]
+},
+{
+    "id": "2222222",
+    "text": "i can't stop thinking about xyz. Quisque viverra eros ante, in commodo sem maximus sed. Morbi posuere sapien at eros cursus feugiat. Maecenas commodo at erat eu rutrum.",
+    "friendId": "bbbb",
+    "upVotes": 1,
+    "comments": [
+        { "content": "i know it doesn't feel like it but it'll be ok" },
+        { "content": "i was dealing with the same shit recently" },
+        { "content": "sometimes time is the best teacher" },
+        { "content": "wow that's really challenging. maybe seek out outside support?" }
+    ]
+},
+{
+    "id": "333333",
+    "text": "I've always had trouble getting over abc. Vivamus in auctor diam. Curabitur eleifend efficitur tempus. Vivamus mollis posuere lorem ac egestas. Quisque libero augue, varius at lorem et, tempus ultrices odio. Cras pellentesque nisl vel aliquam iaculis. Aliquam pulvinar ante vitae rhoncus dignissim. Duis ultricies volutpat luctus. Duis quis mi rhoncus, fermentum massa a, efficitur augue. Integer posuere sapien diam, in feugiat mi faucibus ut. Nullam gravida lacus ut mi eleifend, lacinia sagittis lectus dapibus. ",
+    "friendId": "cccc",
+    "upVotes": 7,
+    "comments": [
+        { "content": "i know it doesn't feel like it but it'll be ok" },
+        { "content": "i was dealing with the same shit recently" },
+        { "content": "sometimes time is the best teacher" },
+        { "content": "wow that's really challenging. maybe seek out outside support?" }
+    ]
+},
+{
+    "id": "333333",
+    "text": "I can't get this out of my head. I know it's not a big deal, but...Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec gravida interdum ultrices. Nunc pellentesque nunc tellus, ac tincidunt nibh feugiat id. Fusce eu nibh urna.",
+    "friendId": "dddd",
+    "upVotes": 10,
+    "comments": [
+        { "content": "i know it doesn't feel like it but it'll be ok" },
+        { "content": "i was dealing with the same shit recently" },
+        { "content": "sometimes time is the best teacher" },
+        { "content": "wow that's really challenging. maybe seek out outside support?" }
+    ]
+},
