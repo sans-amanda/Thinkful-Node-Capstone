@@ -6,29 +6,22 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 // Variables needed from configs.js
-const { PORT, DATABASE_URL } = require('./config');
+const { PORT, DATABASE_URL } = require('./config/config');
 
 // Create the express app
 const app = express();
 
 // Set up routs
-const User = require('./controllers/users-router');
-const Client = require('./controllers/clients-router');
-const Note = require('./controllers/notes-router');
-const { router: authRouter } = require('./controllers/auth-router');
-const { localStrategy, jwtStrategy } = require('./middlewares/auth-strategies');
+const Post = require("./routers/routerPost");
+const Users = require("./routers/routerUsers");
 
-passport.use(localStrategy);
-passport.use(jwtStrategy);
 
 // Let express know to grab files from public folder
-app.use(morgan('common')); // Our server logger
+app.use(morgan("common")); // Our server logger
 app.use(express.json());
-app.use(express.static('public'));
-app.use('/api/users', User);
-app.use('/api/auth', authRouter);
-app.use('/api/clients', Client);
-app.use('/api/notes', Note);
+app.use(express.static("public"));
+app.use("/api/users", Post);
+app.use("/api/auth", Users;
 
 
 

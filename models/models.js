@@ -7,6 +7,7 @@ const userSchema = mongoose.Schema({
     email: { type: String, required: true },
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true }
+    // hash & salt later for auth and jwt stuff
 });
 
 userSchema.methods.serialize = function () {

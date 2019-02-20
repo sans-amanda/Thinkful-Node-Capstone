@@ -12,7 +12,7 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 //--IMPORT VALUES FROM `/config`
-const {PORT, DATABASE_URL} = require("./config");
+const {PORT, DATABASE_URL} = require("./config/config");
 
 // log the http layer
 // app.use(morgan(':date[iso] :method :url :response-time'));
@@ -23,12 +23,12 @@ app.use(express.static("public"));
 app.use(express.json());
 
 
-const routerPost = require("./routerPost");
-const routerUsers = require("./routerUsers");
+const routerPost = require("./routers/routerPost");
+const routerUsers = require("./routers/routerUsers");
 
-// when requests come into `/post` or
-// `/users`, we'll route them to the express
-// router instances we've imported. Remember,
+// when requests come into `/api/post` or
+// `/api/users`, we'll route them to the express
+// router instances we've imported.
 // these router instances act as modular, mini-express apps.
 app.use("/api/post", routerPost);
 app.use("/api/users", routerUsers);
