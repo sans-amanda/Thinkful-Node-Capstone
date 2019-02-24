@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const jsonParser = bodyParser.json();
 
 
-const { Users } = require("./models/models");
+const { Users } = require("../models/models");
 
 //---EXPRESS ROUTER
 const router = express.Router();
