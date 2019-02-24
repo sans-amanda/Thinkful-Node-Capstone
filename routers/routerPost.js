@@ -29,7 +29,7 @@ router.get("/", (req, res) => {
   });
 });
 
-//--GET -ONE POST, RANDOM
+//--GET -POST COMMENTS ??
 
 //--POST -NEW POST
 router.post("/", (req, res) => {
@@ -46,7 +46,8 @@ router.post("/", (req, res) => {
 
   Posts
     .create({
-      content: req.body.body
+      content: req.body.body,
+      comments: null
     })
     .then(
       posts => res.status(201).json(posts.serialize()))
