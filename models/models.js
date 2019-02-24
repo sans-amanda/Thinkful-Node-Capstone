@@ -25,7 +25,7 @@ const User = mongoose.model("Users", userSchema);
 //--COMMENT SCHEMA
 
 const commentSchema = mongoose.Schema({
-    content: [ comment: { type: String, required: true }]
+    content: { type: String, required: true }
 });
 
 commentSchema.methods.serialize = function () {
