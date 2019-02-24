@@ -7,14 +7,14 @@ const expect = chai.expect;
 chai.use(chaiHttp);
 
 //test to verify GET post
-describe("Users", function() {
+describe("Posts", function() {
   before(function() {
     return runServer();
   });
   after(function() {
     return closeServer();
   });
-  it('should list posts on GET', function() {
+  it('should list posts on GET', function(done) {
     return chai.request(app)
       .get('/api/post')
       .then(function(res) {
@@ -27,7 +27,7 @@ describe("Users", function() {
           expect(item).to.have.all.keys(
             "id", "body");
         });
-        done();
+      done();
       });
   });
 });
