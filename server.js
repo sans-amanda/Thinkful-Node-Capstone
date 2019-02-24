@@ -35,7 +35,7 @@ app.use("/api/users", routerUsers);
 
 let server;
 
-function runServer(databaseURL=DATABASE_URL, port=PORT) {
+function runServer(databaseUrl=DATABASE_URL, port=PORT) {
   return new Promise((resolve, reject) => {
     mongoose.connect(databaseUrl, err => {
       if (err) {
