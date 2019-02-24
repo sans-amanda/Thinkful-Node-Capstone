@@ -23,8 +23,9 @@ const User = mongoose.model("Users", userSchema);
 
 
 //--COMMENT SCHEMA
+
 const commentSchema = mongoose.Schema({
-    content: { type: String, required: true }
+    content: [ comment: { type: String, required: true }]
 });
 
 commentSchema.methods.serialize = function () {
@@ -43,17 +44,14 @@ const Comments = mongoose.model("Comments", commentSchema);
 const postSchema = mongoose.Schema({
     id: { type: String, required: true, unique: true },
     body: { type: String, required: true },
-    comments: [ commentSchema ],
-    likes: { type: Number },
-    archive: { type: Boolean, default: false }
+    comments: [ commentSchema ]
 });
 
 postSchema.methods.serialize = function () {
     return {
         id: this._id || "" ,
         body: this.body || "" ,
-        comments: this.comments || "" ,
-        like: this.likes || ""
+        comments: this.comments || "" 
     };
 };
 
