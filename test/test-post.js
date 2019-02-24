@@ -27,6 +27,7 @@ describe("Users", function() {
           expect(item).to.have.all.keys(
             "id", "body");
         });
+        done();
       });
   });
 });
